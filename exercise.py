@@ -6,7 +6,7 @@
 """1"""
 
 
-"""
+
 for i in range(3):
     a = int(input("Enter first number: "))
     b = int(input("input second number: "))
@@ -31,7 +31,7 @@ for i in range(3):
     if 10 < a < 100:
         print("a is bigger than 10, but smaller than 100")
 
-"""
+
 
 
 """2"""
@@ -49,14 +49,21 @@ October - 31 days
 November - 30 days
 December - 31 days
 """
-
+"""
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+months31 = ["January","March","May","July","August","October","December"]
+months30 = ["April","June","September","November"]
+months28 = ["February"]
 print(months)
 
+
+
+
 mon = str(input("enter  a month: "))
-if mon  == "January" or "March" or "May" or "July" or "October" or "December":
+if mon in months31:                            
     print("this month has 31 days")
-elif mon == "April" or "June" or "September" or "November":
+elif mon in months30:
     print("This month has 30 days")
-else:  #if mon == "February":
+else:  
     print("This Month has 28 days")
+"""
